@@ -1,0 +1,36 @@
+def star1(left='')
+  "#{left}  *  "
+end
+
+def star2(left='')
+  "#{left} * * "
+end
+
+def star3(left='')
+  "#{left}*****"
+end
+
+def print_stars(left='', times=1)
+  print "#{star1 create_space(left)}"
+  times.times { print " #{st
+  puts
+  print "#{star2 create_space(left)}"
+  puts
+  print "#{star3 create_space(left)}"
+  puts
+end
+
+def create_space(length)
+  str = ''
+  length.times { str += ' ' }
+  str
+end
+
+input = gets.to_i/6
+input -= 1
+unit = 3
+
+while input >= 0
+  print_stars(input*unit)
+  input -= 1
+end
