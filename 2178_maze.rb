@@ -3,7 +3,6 @@
 
 $n,$m = gets.split.map {|c| c.to_i}
 $maze = Array.new $n
-#$d_map = Array.new($n) { Array.new($m) {0} }
 $d_map = Array.new($n) { Array.new($m) }
 (0..($n-1)).each do |i|
     $maze[i] = gets.chomp.split ''
